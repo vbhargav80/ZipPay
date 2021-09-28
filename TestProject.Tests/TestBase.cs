@@ -21,6 +21,7 @@ namespace TestProject.Tests
             var config = new MapperConfiguration(opts =>
             {
                 opts.AddProfile(new UserProfile());
+                opts.AddProfile(new AccountProfile());
             });
             Mapper = config.CreateMapper();
         }

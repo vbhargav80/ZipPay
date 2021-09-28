@@ -4,6 +4,29 @@
         <name>TestProject.WebAPI</name>
     </assembly>
     <members>
+        <member name="M:TestProject.WebAPI.Controllers.AccountsController.GetAllAccounts">
+            <summary>
+            Gets all the accounts
+            </summary>
+            <returns>List of AccountResponse</returns>
+            <response code="200">Returns all the accounts</response>
+        </member>
+        <member name="M:TestProject.WebAPI.Controllers.AccountsController.GetAccount(System.Int32)">
+            <summary>
+            Gets an account with the given id
+            </summary>
+            <param name="id">id of the account</param>
+            <returns>AccountResponse</returns>
+            <response code="200">Returns the account</response>
+            <response code="400">Account could not be found</response>
+        </member>
+        <member name="M:TestProject.WebAPI.Controllers.AccountsController.CreateAccount(TestProject.WebAPI.Commands.CreateAccountCommand)">
+            <summary>
+            Creates a new account
+            </summary>
+            <response code="201">Account created successfully</response>
+            <response code="400">Account data is invalid</response>
+        </member>
         <member name="M:TestProject.WebAPI.Controllers.UsersController.GetAllUsers">
             <summary>
             Gets all the users

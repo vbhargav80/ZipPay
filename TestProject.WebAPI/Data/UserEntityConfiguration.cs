@@ -12,6 +12,7 @@ namespace TestProject.WebAPI.Data
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
             builder.HasIndex(u => u.EmailAddress).IsUnique();
+            builder.HasMany(u => u.Accounts).WithOne(a => a.User);
         }
     }
 }
