@@ -4,13 +4,13 @@
 * Starting the project in Visual Studio on localhost will fire up the swagger page where you can start interacting with the API
   
 ## Building
-* .Net core 5 is required. I upgraded the solution from Hackerrank to use the latest framework version
-* Visual 2019 required
+* Install .Net core 5
+* Install Visual 2019
 * Just run from Visual Studio using F5 and the API will fire up the swagger page
-* Alternative use `dotnet build` from the project folder directory to build the project
+* Alternative use `dotnet build` from the project folder directory to build the project and `dotnet run` to run it
 
 ## Testing
-* Unit tests can be run from Visual Studio using Resharper or the VS Test running
+* Unit tests can be run from Visual Studio using Resharper or the VS Test runner
 * Alternatively unit tests can be run using `dotnet test` from the test projects folder
 * Unit test coverage is basic, I've covered the business requirements mentioned in the README file.
 
