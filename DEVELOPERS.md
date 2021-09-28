@@ -5,7 +5,7 @@
   
 ## Building
 * Install .Net core 5
-* Install Visual 2019
+* Install Visual 2019 with the latest updates
 * Just run from Visual Studio using F5 and the API will fire up the swagger page
 * Alternative use `dotnet build` from the project folder directory to build the project and `dotnet run` to run it
 
