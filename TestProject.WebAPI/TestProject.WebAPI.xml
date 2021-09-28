@@ -4,5 +4,29 @@
         <name>TestProject.WebAPI</name>
     </assembly>
     <members>
+        <member name="M:TestProject.WebAPI.Controllers.UsersController.GetAllUsers">
+            <summary>
+            Gets all the users
+            </summary>
+            <returns>List of UserResponse</returns>
+            <response code="200">Returns all the users</response>
+        </member>
+        <member name="M:TestProject.WebAPI.Controllers.UsersController.GetUser(System.Int32)">
+            <summary>
+            Gets a user with the given id
+            </summary>
+            <param name="id">id of the user</param>
+            <returns>UserResponse</returns>
+            <response code="200">Returns the user</response>
+            <response code="400">User could not be found</response>
+        </member>
+        <member name="M:TestProject.WebAPI.Controllers.UsersController.CreateUser(TestProject.WebAPI.Commands.CreateUserCommand)">
+            <summary>
+            Creates a new user
+            </summary>
+            <response code="201">User created successfully</response>
+            <response code="400">User data is invalid</response>
+            <response code="409">Duplicate user email address</response>
+        </member>
     </members>
 </doc>

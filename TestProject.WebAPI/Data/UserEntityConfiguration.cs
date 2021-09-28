@@ -11,6 +11,7 @@ namespace TestProject.WebAPI.Data
             builder.ToTable($"{nameof(User)}");
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
+            builder.HasIndex(u => u.EmailAddress).IsUnique();
         }
     }
 }
